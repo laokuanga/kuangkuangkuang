@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<script type="text/javascript">
+          function init(){
+          	var width=document.documentElement.clientWidth;
+          	//动态设置设备的html字体大小
+            document.documentElement.style.fontSize = width /10+ 'px';
+          }
+          
+          init()
+          //当屏幕宽度变化时
+          window.addEventListener('resize',init)
+          //当切换横竖屏时
+          window.addEventListener('orientationchange',init)
+          
+		</script>
+		  <style type="text/css">
+		  	.div1 {
+		  		height: 3rem;
+		  		width: 2rem;
+		  		background: red;
+		  	}
+		  </style>
+	</head>
+	<body>
+		<div class="div1">
+			
+		</div>
+	</body>
+</html>

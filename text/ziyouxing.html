@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<script type="text/javascript">
+			function init() {
+				var width = document.documentElement.clientWidth;
+				//动态设置设备的html字体大小
+				document.documentElement.style.fontSize = width / 25.875 + 'px';
+			}
+			init()
+			//当屏幕宽度变化时
+			window.addEventListener('resize', init)
+			//当切换横竖屏时
+			window.addEventListener('orientationchange', init)
+		</script>
+		<link rel="stylesheet" type="text/css" href="css/ziyouxing.css"/>
+		<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_1300394_m5n4tzt6aok.css"/>
+	</head>
+	<body>
+		<div class="header-cool">
+			<div class="header">
+			<span  class="iconfont icon-arrow-left"></span>
+			<h1 class="header_title">自由行</h1>
+			</div>
+		</div>
+		
+		<div class="flexbox">
+			<div class="flexbox-vertical">
+				<i class="iconfont icon-location"></i>
+				<span>上海</span>
+			</div>
+			<div class="flexbox-searchr">
+				<i class="iconfont icon-sousuo"></i>
+				<span>目的地/关键字</span>
+			</div>
+		</div>
+		
+		<div class="slider">
+			
+		</div>
+	</body>
+</html>
